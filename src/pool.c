@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "hotrace.h"
+#include "../includes/hotrace.h"
 
 t_pool	*pool_new(void)
 {

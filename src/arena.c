@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "hotrace.h"
+#include "../includes/hotrace.h"
 
 int	arena_init(t_arena *arena)
 {

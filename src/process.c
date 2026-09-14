@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "hotrace.h"
+#include "../includes/hotrace.h"
 
 static int	search_line(t_hashtable *ht, const char *line)
 {

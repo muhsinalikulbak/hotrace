@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "hotrace.h"
+#include "../includes/hotrace.h"
 
 static int	init_all(t_reader *reader, t_arena *arena, t_hashtable *ht)
 {

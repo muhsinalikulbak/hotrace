@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "hotrace.h"
+#include "../includes/hotrace.h"
 
 int	reader_init(t_reader *r)
 {
