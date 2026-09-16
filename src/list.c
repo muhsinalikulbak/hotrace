@@ -37,6 +37,13 @@ int	list_add(t_hashtable *ht, char *key, char *value, t_pool **pool)
 		return (-1);
 	index = djb2_hash(key);
 	existing = ht->buckets[index];
+
+	// existing eğer NULL ise demek ki bu HASH değeri kullanımda değil 
+	// t_node* gelip while'den return edilmeden çıkarsa
+	// Demek ki aynı hash'i üreten birden fazla 'KEY' vardır.
+	// O zaman bu aynı hash'e sahip yeni key-value pair node'ın
+	// HEAD'ine eklenir. Yani sürekli başa eklenir. O(1) maliyet.
+	
 	while (existing)
 	{
 		if (ft_strcmp(existing->key, key) == 0)
